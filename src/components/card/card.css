@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--body-color);
+    transition: 0.3s transform cubic-bezier(0.36, 0.55, 0.66, 1.25);
+    background-color: #7bc1ff;
+}
+
+.card:hover {
+    transform: scale(105%);
+}
+
+/*Image*/
+.card img {
+    padding: 1rem;
+    object-fit: contain;
+}
+
+.card .metadata {
+    border-radius: 0 0 12px 12px;
+    background: #FFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+/*Title*/
+.card h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Subtitle*/
+.card h4 {
+
+}
+
+/*Description*/
+.card p {
+
+}
