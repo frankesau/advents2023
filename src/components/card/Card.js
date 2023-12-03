@@ -13,10 +13,12 @@ export const Card = (cardParams) => {
 
   return `<a class="card" href=${url}>
     <img src=${imageSrc} alt="card image"/>
-    <div class="metadata">
-        <h3>${title}</h3>
-        ${tag}
+    <section class="metadata">
+        <header>
+            <h3>${title}</h3>
+            ${tag}
+        </header>
         <p>${description}</p>
-    </div>
+    </section>
   </a>`
 }

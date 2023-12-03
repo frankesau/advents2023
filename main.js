@@ -8,7 +8,7 @@ const challenges = await getChallenges()
 document.querySelector('#app').innerHTML = `
   <div>
     <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    <h1>AdventJS 2023 Solved Challenges🎄</h1>
+    <h1>JavaScript Advents 2023🎄</h1>
     <section class="grid">
     ${challenges.map((challenge) => {
       return Card(challenge)

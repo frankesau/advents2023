@@ -13,6 +13,14 @@
     transform: scale(105%);
 }
 
+.card header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 /*Image*/
 .card img {
     padding: 1rem;
@@ -35,18 +43,10 @@
 
 /*Title*/
 .card h3 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100%;
-    overflow: hidden;
-}
-
-/*Subtitle*/
-.card h4 {
-
+    font-size: 1.6rem;
 }
 
 /*Description*/
 .card p {
-
+    font-size: 1.2rem
 }
