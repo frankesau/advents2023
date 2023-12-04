@@ -16,6 +16,7 @@
     overflow: auto;
     background-color: #171616;
     padding: 1rem;
+    margin: 1rem 0 0 0;
     border-radius: 0 0 8px 8px;
 }
 
@@ -40,7 +41,12 @@
 }
 
 .solution-data a {
-    text-decoration: none;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 0.1rem;
+}
+
+.solution-data a:hover {
+    color: #646cff;
 }
 

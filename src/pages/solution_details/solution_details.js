@@ -20,7 +20,7 @@ document.querySelector('#app').innerHTML = `
         <img src="${imageSrc}" class="image" alt="JavaScript logo" />
         <section class="solution-data">
             <h2>${name}</h2>
-            <a href=${challengeUrl}>Link to challenge</a>
+            <a href=${challengeUrl}>Go to challenge!</a>
             <code class="code">${highlightedCode.value}</code>
         </section>
     </article>
