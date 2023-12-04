@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "name": "01: ¡Primer regalo repetido!",
+      "code": "function findFirstRepeated(gifts) {\n  let firstRepeated = -1\n  let repeatedPositions = []\n  let currentGiftId\n  let indexOfFirstRepeatedGiftId\n  let nextNearestRepeatedIndex\n  \n  gifts = gifts ?? []\n  \n  for (let i = 0; i < gifts.length; i++) {\n    currentGiftId = gifts[i]\n    nextNearestRepeatedIndex = gifts.indexOf(currentGiftId, i + 1)\n    \n    if (nextNearestRepeatedIndex >= 0) {\n      repeatedPositions.push(nextNearestRepeatedIndex)\n    }\n  }\n    \n  if (repeatedPositions.length > 0) {\n    indexOfFirstRepeatedGiftId = Math.min.apply(Math, repeatedPositions)\n    firstRepeated = gifts[indexOfFirstRepeatedGiftId]\n  }\n\n  return firstRepeated}",
+      "id": "1",
+      "imageSrc": "/01.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/1"
+    },
+    {
+      "name": "02: Ponemos en marcha la fábrica",
+      "code": "<h1>Hello World 2<h1/>",
+      "id": "2",
+      "imageSrc": "/02.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/2"
+    },
+    {
+      "name": "02: El elfo travieso",
+      "code": "<h1>Hello World 3<h1/>",
+      "id": "3",
+      "imageSrc": "/03.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/3"
+    }
+  ]
+}

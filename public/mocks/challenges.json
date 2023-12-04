@@ -2,20 +2,21 @@
   "results": [
     {
       "title": "01",
-      "url": "https://adventjs.dev/es/challenges/2023/1",
-      "imageSrc": "./01.png",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=1",
+      "url2": "https://adventjs.dev/es/challenges/2023/1",
+      "imageSrc": "/01.png",
       "description": "¡Primer regalo repetido!",
       "subTitle": "easy"
     },{
       "title": "02",
-      "url": "https://adventjs.dev/es/challenges/2023/2",
-      "imageSrc": "./02.png",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=2",
+      "imageSrc": "/02.png",
       "description": "Ponemos en marcha la fábrica",
       "subTitle": "easy"
     },{
       "title": "03",
-      "url": "https://adventjs.dev/es/challenges/2023/2",
-      "imageSrc": "./03.png",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=3",
+      "imageSrc": "/03.png",
       "description": "El elfo travieso",
       "subTitle": "medium"
     }
