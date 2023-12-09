@@ -1,25 +1,60 @@
 {
   "results": [
     {
-      "name": "01: ¡Primer regalo repetido!",
+      "name": "01: 🎁 ¡Primer regalo repetido!",
       "code": "function findFirstRepeated(gifts) {\n  let firstRepeated = -1\n  let repeatedPositions = []\n  let currentGiftId\n  let indexOfFirstRepeatedGiftId\n  let nextNearestRepeatedIndex\n  \n  gifts = gifts ?? []\n  \n  for (let i = 0; i < gifts.length; i++) {\n    currentGiftId = gifts[i]\n    nextNearestRepeatedIndex = gifts.indexOf(currentGiftId, i + 1)\n    \n    if (nextNearestRepeatedIndex >= 0) {\n      repeatedPositions.push(nextNearestRepeatedIndex)\n    }\n  }\n    \n  if (repeatedPositions.length > 0) {\n    indexOfFirstRepeatedGiftId = Math.min.apply(Math, repeatedPositions)\n    firstRepeated = gifts[indexOfFirstRepeatedGiftId]\n  }\n\n  return firstRepeated}",
       "id": "1",
       "imageSrc": "/01.png",
       "challengeUrl": "https://adventjs.dev/es/challenges/2023/1"
     },
     {
-      "name": "02: Ponemos en marcha la fábrica",
-      "code": "<h1>Hello World 2<h1/>",
+      "name": "02: 🏭 Ponemos en marcha la fábrica",
+      "code": "function manufacture(gifts, materials) {\n  let manufacturedGift = [];\n  gifts = gifts??[]\n  material = material??\"\"\n  \n  gifts.forEach((gift) => {\n    manufacturedGift.push(gift)\n\n    for (let i = 0; i < gift.length; i++) {\n      if (materials.indexOf(gift.charAt(i)) === -1) {\n        manufacturedGift.pop()\n        break;\n      }\n    }\n  })\n  \n  return manufacturedGift\n}",
       "id": "2",
       "imageSrc": "/02.png",
       "challengeUrl": "https://adventjs.dev/es/challenges/2023/2"
     },
     {
-      "name": "02: El elfo travieso",
-      "code": "<h1>Hello World 3<h1/>",
+      "name": "03: 👽 El elfo travieso",
+      "code": "function findNaughtyStep(original, modified) {\n  original = original??\"\"\n  modified = modified??\"\"\n  let naughtyStep = \"\"\n  let index = 0\n  let char\n  const originalLength = original.length\n  const modifiedLength = modified.length\n  const isMissing = modifiedLength < originalLength\n  const isLengthless = !originalLength && modifiedLength \n  || originalLength && !modifiedLength\n  \n  if (original === modified) return naughtyStep\n  \n  if (isLengthless) {\n    return isMissing ? original[0] : modified[0]\n  }\n  \n  for (; index < originalLength; index++) {\n    char = original.charAt(index)\n      if (modified.indexOf(char, index) !== index) {\n        naughtyStep = isMissing ? char : modified[index]\n        break\n      }\n    \n    if (index === originalLength - 1 && !isMissing) {\n      naughtyStep = modified[index + 1]\n      break\n    }\n  }\n  \n  return naughtyStep\n}",
       "id": "3",
       "imageSrc": "/03.png",
       "challengeUrl": "https://adventjs.dev/es/challenges/2023/3"
+    },
+    {
+      "name": "04: 😵‍💫 Dale la vuelta a los paréntesis",
+      "code": "Ooops!",
+      "id": "4",
+      "imageSrc": "/04.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/4"
+    },
+    {
+      "name": "05: 🛷 El CyberTruck de Santa",
+      "code": "function cyberReindeer (road, time) {\n  let roadArray = road.split('')\n  const closedGateType = '|'\n  const openedGateType = '*'\n  const roadType = '.'\n  const sleighType = 'S'\n  const result = []\n  const gatesTime = 5\n  let moveIntervalTime = 0\n  let currentMoveTime =0\n  let sleighPosition = 0\n  let currentPositionType = roadType\n  let endOfRoad = false\n\n  const openGates = () => {\n    let joinedRoad = roadArray.join('')\n    joinedRoad = joinedRoad.replaceAll(closedGateType, openedGateType)\n    roadArray = joinedRoad.split('')\n  }\n\n  while (moveIntervalTime < time) {\n    const shouldMove = !endOfRoad\n      && Boolean(result.length)\n      && roadArray[sleighPosition + 1] !== closedGateType\n\n    if (shouldMove) {\n      roadArray[sleighPosition] = currentPositionType\n      sleighPosition++\n      currentPositionType = roadArray[sleighPosition]\n      roadArray[sleighPosition] = sleighType\n\n      if (sleighPosition === roadArray.length) {\n        endOfRoad = true\n      }\n    }\n\n    currentMoveTime++\n    moveIntervalTime++\n\n    result.push(roadArray.join(''))\n\n    if (moveIntervalTime === gatesTime) {\n      openGates()\n    }\n  }\n\n  return result\n}",
+      "id": "5",
+      "imageSrc": "/05.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/5"
+    },
+    {
+      "name": "06: 🦌 Los renos a prueba",
+      "code": "function maxDistance(movements) {\n  let reducedMap = {\n   '>': 1,\n    '<': -1,\n    '*': -1\n  }\n  let increasedMap = {\n   '>': 1,\n    '<': -1,\n    '*': 1\n  }\n  let reduced = 0\n  let increased = 0\n  let movement\n\n  for (let i = 0; i < movements.length; i++) {\n    movement = movements[i]\n    reduced += reducedMap[movement]\n    increased += increasedMap[movement]\n  }\n\n  return Math.max(Math.abs(reduced), Math.abs(increased))\n}",
+      "id": "6",
+      "imageSrc": "/06.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/6"
+    },
+    {
+      "name": "07: 📦Las cajas en 3D",
+      "code": "",
+      "id": "7",
+      "imageSrc": "/07.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/7"
+    },
+    {
+      "name": "08: 🏢Ordenando el almacen",
+      "code": "",
+      "id": "8",
+      "imageSrc": "/08.png",
+      "challengeUrl": "https://adventjs.dev/es/challenges/2023/8"
     }
   ]
 }
