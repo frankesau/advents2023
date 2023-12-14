@@ -5,19 +5,49 @@
       "url": "/src/pages/solution_details/solution_details.html?solution_id=1",
       "url2": "https://adventjs.dev/es/challenges/2023/1",
       "imageSrc": "/01.png",
-      "description": "¡Primer regalo repetido!",
+      "description": "🎁¡Primer regalo repetido!",
       "subTitle": "easy"
     },{
       "title": "02",
       "url": "/src/pages/solution_details/solution_details.html?solution_id=2",
       "imageSrc": "/02.png",
-      "description": "Ponemos en marcha la fábrica",
+      "description": "🏭Ponemos en marcha la fábrica",
       "subTitle": "easy"
     },{
       "title": "03",
       "url": "/src/pages/solution_details/solution_details.html?solution_id=3",
       "imageSrc": "/03.png",
-      "description": "El elfo travieso",
+      "description": "👽El elfo travieso",
+      "subTitle": "easy"
+    },{
+      "title": "04",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=4",
+      "imageSrc": "/04.png",
+      "description": "😵‍💫Dale vuelta a los paréntesis",
+      "subTitle": "medium"
+    },{
+      "title": "05",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=5",
+      "imageSrc": "/05.png",
+      "description": "🚚El CyberTruck de Santa",
+      "subTitle": "medium"
+    },{
+      "title": "06",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=6",
+      "imageSrc": "/06.png",
+      "description": "🦌🦌Los renos a prueba",
+      "subTitle": "easy"
+    },{
+      "title": "07",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=7",
+      "imageSrc": "/07.png",
+      "description": "📦Las cajas en 3D",
+      "subTitle": "easy"
+    },{
+      "title": "08",
+      "url": "/src/pages/solution_details/solution_details.html?solution_id=8",
+      "imageSrc": "/08.png",
+      "description": "🏢Ordenando el almacen",
       "subTitle": "medium"
     }
   ]

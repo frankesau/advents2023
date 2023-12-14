@@ -1,18 +1,11 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
-import { getChallenges } from './src/services/challenges.js'
-import { Card } from './src/components/card/Card.js'
+import { Grid } from './src/components/grid/grid.js'
 
-const challenges = await getChallenges()
+const app = document.querySelector('#app')
 
-document.querySelector('#app').innerHTML = `
-  <div>
+app.innerHTML = `
     <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     <h1>JavaScript Advents 2023🎄</h1>
-    <section class="grid">
-    ${challenges.map((challenge) => {
-      return Card(challenge)
-    }).join("")}
-  </section>
-  </div>
 `
+Grid(app)
