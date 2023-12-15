@@ -1,6 +1,6 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
-import { Grid } from './src/components/grid/grid.js'
+import { Grid } from '@/components/grid/Grid.js'
 
 const app = document.querySelector('#app')
 
